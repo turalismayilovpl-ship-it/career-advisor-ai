@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("PrismPath AI")
+st.title("PrisMate AI")
 
 user_input = st.text_area("Paste your CV or describe your situation")
 
