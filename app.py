@@ -16,7 +16,7 @@ def generate_plan(text):
             {"role": "user", "content": text}
         ]
     )
-    return response.choices[0].message.content
+    return response.choices[0].message["content"]
 
 if st.button("Generate Plan"):
     if user_input.strip():
@@ -24,3 +24,4 @@ if st.button("Generate Plan"):
         st.write(output)
     else:
         st.write("Please enter your CV or description.")
+
